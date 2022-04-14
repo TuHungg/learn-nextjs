@@ -1,9 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useState } from 'react';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
+  const [] = useState();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +16,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Link href="/posts">
+        <a>post page</a>
+      </Link>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
